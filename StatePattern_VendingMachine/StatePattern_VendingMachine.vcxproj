@@ -18,19 +18,12 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="StateClient.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="LightSwitch.h" />
-  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{24F8825A-F61C-430F-8ED2-463EC522EB30}</ProjectGuid>
+    <ProjectGuid>{88D1BEA6-66D7-4BAD-8F51-DF9038CE0BAF}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>StatePattern</RootNamespace>
+    <RootNamespace>StatePatternVendingMachine</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
-    <ProjectName>StatePattern_switch</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -145,6 +138,15 @@
       <SubSystem>Console</SubSystem>
     </Link>
   </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="VendingClient.cpp" />
+    <ClCompile Include="VendingMachine.cpp" />
+    <ClCompile Include="VendingState.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="VendingMachine.h" />
+    <ClInclude Include="VendingState.h" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
