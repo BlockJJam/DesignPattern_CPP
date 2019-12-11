@@ -21,15 +21,11 @@ private:
 
 public:
 	NoMoneyState(VendingMachine * machine);
-
 	~NoMoneyState();
 
 	void insertMoney(int money);
-
 	void pushButton(int price);
-
 	void returnMoney();
-
 };
 
 class NoEnoughMoneyState : public VendingState
@@ -39,13 +35,10 @@ private:
 
 public:
 	NoEnoughMoneyState(VendingMachine * machine);
-
 	~NoEnoughMoneyState();
 
 	void insertMoney(int money);
-	
 	void pushButton(int price);
-
 	void returnMoney();
 };
 
@@ -56,12 +49,10 @@ private:
 
 public:
 	EnoughMoneyState(VendingMachine * machine);
-
 	~EnoughMoneyState();
+	
 	void insertMoney(int money);
-
 	void pushButton(int price);
-
 	void returnMoney();
 };
 
@@ -72,12 +63,9 @@ private:
 
 public:
 	SoldOutState(VendingMachine * machine);
-
 	~SoldOutState();
 
 	void insertMoney(int money);
-	
 	void pushButton(int price);
-
 	void returnMoney();
 };
