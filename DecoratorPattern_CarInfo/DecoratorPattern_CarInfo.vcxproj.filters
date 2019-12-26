@@ -15,12 +15,15 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="RoadDisplayClient.cpp">
+    <ClCompile Include="CarInfo.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="CarInfoClient.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="RoadDisplay.h">
+    <ClInclude Include="CarInfo.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
