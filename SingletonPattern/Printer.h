@@ -18,22 +18,28 @@ public:
 class RealPrinter99 : public Printer
 {
 private:
-	static Printer *_printer ;
+	static Printer* _printer ;
 public:
 	~RealPrinter99()
 	{}
 
-	static Printer & getPrinter()
-	{
-		if (_printer == nullptr)
-			_printer = new RealPrinter99();
-		return *_printer;
-	}
+	static Printer & getPrinter();
+	
 	void print(string str)
 	{
 		//TODO: printer's printing algorithm
+		cout << str << endl;
 	}
 };
+
+Printer* RealPrinter99::_printer=nullptr;
+
+Printer & RealPrinter99::getPrinter()
+{
+	if (_printer == nullptr)
+		_printer = new RealPrinter99();
+	return *_printer;
+}
 
 class FakePrinter : public Printer
 {
